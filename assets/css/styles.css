@@ -1,0 +1,163 @@
+/* Gaya umum untuk seluruh halaman */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Menggunakan font 'Roboto' dengan fallback ke sans-serif jika 'Roboto' tidak tersedia */
+    margin: 0;
+    /* Menghilangkan margin */
+    padding: 0;
+    /* Menghilangkan padding */
+    background-color: #f8f8f8;
+    /* Warna latar belakang */
+    color: #333;
+    /* Warna teks umum */
+}
+
+/* Container untuk menempatkan konten di tengah */
+.container {
+    max-width: 1200px;
+    /* Lebar maksimum container */
+    margin: 0 auto;
+    /* Menengahkan container di tengah layar */
+    padding: 20px;
+    /* Padding pada semua sisi container */
+}
+
+/* Gaya untuk header */
+header {
+    background-color: #3498db;
+    /* Warna latar belakang header */
+    color: #fff;
+    /* Warna teks header */
+    text-align: center;
+    /* Teks diatur di tengah */
+    padding: 30px 0;
+    /* Padding 30px atas dan bawah pada header */
+    opacity: 0.9;
+    /* Efek transparansi sebesar 0.9 atau 90% */
+}
+
+/* Gaya untuk foto profil */
+.profile-picture {
+    width: 150px;
+    /* Lebar foto profil */
+    height: 150px;
+    /* Tinggi foto profil */
+    border-radius: 50%;
+    /* Membuat foto profil berbentuk lingkaran */
+    margin-bottom: 20px;
+    /* Margin bawah pada foto profil */
+    border: 5px solid #fff;
+    /* Border foto profil */
+    transform: scale(1);
+    /* Efek scaling normal */
+    transition: transform 0.3s ease-in-out;
+    /* Transisi saat dihover dengan efek easing */
+}
+
+/* Efek scaling saat foto profil dihover */
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+/* Gaya untuk heading (h1, h2, h3) */
+h1,
+h2,
+h3 {
+    color: #333;
+    /* Warna teks heading */
+}
+
+/* Gaya untuk setiap section pada halaman */
+section {
+    margin-bottom: 40px;
+    /* Margin bawah pada setiap section */
+}
+
+/* Gaya untuk subheading (h2) */
+h2 {
+    color: #3498db;
+    /* Warna teks subheading */
+    border-bottom: 2px solid #3498db;
+    /* Garis bawah subheading */
+    padding-bottom: 10px;
+    /* Padding bawah pada subheading */
+    margin-bottom: 20px;
+    /* Margin bawah pada subheading */
+    position: relative;
+    /* Posisi relatif untuk efek pseudo-element */
+}
+
+/* Efek garis setelah subheading */
+h2::after {
+    content: '';
+    /* Konten kosong */
+    display: block;
+    /* Menjadikan elemen sebagai blok */
+    width: 50px;
+    /* Lebar garis */
+    height: 2px;
+    /* Tinggi garis */
+    background-color: #3498db;
+    /* Warna garis */
+    position: absolute;
+    /* Posisi absolut terhadap subheading */
+    bottom: 0;
+    /* Menempatkan garis di bagian bawah subheading */
+    left: 50%;
+    /* Menempatkan garis di tengah subheading */
+    transform: translateX(-50%);
+    /* Menggeser garis ke kiri sejauh setengah lebar */
+}
+
+/* Gaya untuk paragraf */
+p {
+    line-height: 1.6;
+    /* Jarak antar baris pada paragraf */
+}
+
+/* Gaya untuk unordered list */
+ul {
+    list-style: none;
+    /* Menghilangkan bullet points pada unordered list */
+    padding: 0;
+    /* Menghilangkan padding pada unordered list */
+}
+
+/* Gaya untuk setiap list item */
+li {
+    margin-bottom: 10px;
+    /* Margin bawah pada setiap list item */
+}
+
+/* Gaya untuk proyek */
+.project {
+    margin-bottom: 30px;
+    /* Margin bawah pada setiap proyek */
+    overflow: hidden;
+    /* Mengatur overflow pada proyek untuk efek transisi yang lebih baik */
+    transition: transform 0.3s ease-in-out;
+    /* Transisi saat dihover dengan efek easing */
+}
+
+/* Efek scaling saat proyek dihover */
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #3498db;
+    /* Warna latar belakang footer */
+    color: #fff;
+    /* Warna teks footer */
+    text-align: center;
+    /* Teks diatur di tengah */
+    padding: 10px 0;
+    /* Padding 10px atas dan bawah pada footer */
+    bottom: 0;
+    /* Footer ditempatkan di bagian paling bawah */
+    width: 100%;
+    /* Lebar 100% pada footer */
+    opacity: 0.9;
+    /* Efek transparansi sebesar 0.9 atau 90% */
+}
